@@ -1,2 +1,0 @@
-"C:/Users/SRAVAN KUMAR/anaconda3/Scripts/activate"
-conda activate base
