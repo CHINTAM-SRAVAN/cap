@@ -201,30 +201,19 @@
 
         <div>
           <center>
-					<h4>Upload Image Here To Identify the Disease</h4>
-			<form action = "http://localhost:5000/" id="upload-file" method="post" enctype="multipart/form-data">
-				<label for="imageUpload" class="upload-label">
-					Choose...
-				</label>
-				<input type="file" name="images" id="imageUpload" accept=".png, .jpg, .jpeg">
-        
-			</form>
-    
-
-			<div class="image-section" style="display:none;">
-				<div class="img-preview">
-					<div id="imagePreview"></div>
-				</div>
+					<h4>Click to Predict</h4>
+			<div >
 				<div>
-					<button type="button" class="btn btn-success" id="btn-predict">Predict!</button>
+					<button type="button" class="btn" id="btn-predict" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            Predict!
+        </button>
+          <script>
+            document.getElementById('btn-predict').addEventListener('click', function() {
+                window.location.href = 'https://vitap.ac.in/';
+            });
+        </script>
 				</div>
 			</div>
-
-			<div class="loader" style="display:none;"></div>
-
-			<h3>
-				<span id="result"> </span>
-			</h3>
     </center>
 		</div>
 
@@ -242,19 +231,19 @@
         <div class="row">
 
           
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="display: flex; flex-direction: column; justify-content: center;">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img" style="display: flex; justify-content: center; align-items: center; height: 300px; width: 100%;">
-                <img src="{{ url_for('static', filename='img/sir.jpg') }}" height="300px" class="img-fluid" alt="" style="max-width: 100%; max-height: 100%;">
+              <div class="member-img" >
+                <img src="{{ url_for('static', filename='img/sir.jpg') }}" height="300px" class="img-fluid" alt="" style="max-width: 40%; max-height: 40%;">
                 <div class="social">
                   <a href="https://www.linkedin.com/in/v-c-bharathi-30a579b8/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-info" style="text-align: center;">
-                <h4>Dr V.C. Bharathi</h4>
-              </div>
+              
             </div>
-          </div>
+            <div class="member-info" style="text-align: center;">
+              <h4>Dr V.C. Bharathi</h4>
+            </div>
+          
           
 
         </div>
