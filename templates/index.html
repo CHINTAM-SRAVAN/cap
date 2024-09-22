@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>V FOR VISION</title>
+
+
+  <!-- Favicons -->
+  <link href="#" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <!--<link href="assets/css/style.css" rel="stylesheet">-->
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+  
+
+
+  <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script> 
+  <!-- Template Main CSS File -->
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="#hero" class="logo me-auto"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Predict</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Created By</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({{ url_for('static', filename='img/slide/slide-1.jpg') }})">
+          <div class="container">
+            <h2>Welcome to <span> V FOR VISION</span></h2>
+            <p>we are dedicated to providing high-quality healthcare services to meet your medical needs. Our team of experienced AI Developers are here to ensure that you and your loved ones receive the best care possible.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({{ url_for('static', filename='img/slide/slide-2.jpg') }})">
+          <div class="container">
+            <h2>Brief</h2>
+            <p>Providing the highest standard of medical care with a team of experienced Tech professionals.Harnessing advanced technology 
+              for precise diagnoses and early disease prediction.Your health and well-being are at the center of everything we do.
+              Pioneering the future of healthcare with our innovative "Eye Disease Prediction" system.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({{ url_for('static', filename='img/slide/slide-3.jpg') }})">
+          <div class="container">
+            <h2>AIM</h2>
+            <p>We understand the significance of early diagnosis and prevention in maintaining optimal health. With a special focus on "Eye Disease Prediction," we aim to revolutionize healthcare Industry in a unique by leveraing the AI Technology.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Our mission is to redefine healthcare by providing compassionate, expert care while embracing cutting-edge technology. We believe that health is not just the absence of disease; it's about the quality of life, and we're here to enhance it.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Journey of V FOR VISION</h3>
+            <p class="fst-italic">
+              V FOR VISION will be a trusted healthcare partner for countless individuals and families. We will continually evolve to meet the changing needs of our patients
+               and the advancements in medical science.</p>
+            <h3>Our Values</h3>
+            <ul>
+              <li><i class="bi bi-check-circle"></i><b>Excellence:</b> We are dedicated to excellence in medical care, constantly improving and innovating to deliver the best outcomes.</li>
+              <li><i class="bi bi-check-circle"></i><b>Compassion:</b> We understand that healthcare is not just about treating illnesses but also about providing support and understanding.</li>
+              <li><i class="bi bi-check-circle"></i><b>Integrity:</b> Our commitment to ethical practices ensures that you can trust us with your health.</li>
+            </ul>
+            <p>
+              We believe that technology is a powerful tool in healthcare. Our focus on advanced technology, 
+              including the groundbreaking "Eye Disease Prediction" system, allows us to provide 
+              accurate and early diagnoses.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>we offer a comprehensive healthcare services that are tailored to meet your unique health needs. Our services are designed with a patient-centric approach, combining medical expertise with cutting-edge technology to ensure you receive the best care.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <h4 class="title"><a href="">Easy Disease Recognization</a></h4>
+            <p class="description">we can identify potential health issues at their earliest stages, giving you the advantage of early intervention and improved health.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-pills"></i></div>
+            <h4 class="title"><a href="">Faster Prediction</a></h4>
+            <p class="description">we provide "Faster Prediction" services for quicker and more accurate medical diagnoses. Our advanced diagnostic tools helps to ensure that you receive timely information about your health.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-hospital-user"></i></div>
+            <h4 class="title"><a href="">At Home Service</a></h4>
+            <p class="description">We understand that convenience is essential when it comes to healthcare. Our "At Home Service" is designed to bring medical care to your doorstep. </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <hr>
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Predicition</h2>
+          <p>Our predictive models can detect early signs of diseases and health conditions from your health data to identify patterns and potential risks. Our technology-driven predictions are highly accurate, reducing false positives and negatives.</p>
+        </div>
+
+        <div>
+          <center>
+					<h4>Upload Image Here To Identify the Disease</h4>
+			<form action = "http://localhost:5000/" id="upload-file" method="post" enctype="multipart/form-data">
+				<label for="imageUpload" class="upload-label">
+					Choose...
+				</label>
+				<input type="file" name="images" id="imageUpload" accept=".png, .jpg, .jpeg">
+        
+			</form>
+    
+
+			<div class="image-section" style="display:none;">
+				<div class="img-preview">
+					<div id="imagePreview"></div>
+				</div>
+				<div>
+					<button type="button" class="btn btn-success" id="btn-predict">Predict!</button>
+				</div>
+			</div>
+
+			<div class="loader" style="display:none;"></div>
+
+			<h3>
+				<span id="result"> </span>
+			</h3>
+    </center>
+		</div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+    <section id="doctors" class="doctors section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Guided By</h2>
+          
+        </div>
+
+        <div class="row">
+
+          
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img" style="display: flex; justify-content: center; align-items: center; height: 300px; width: 100%;">
+                <img src="{{ url_for('static', filename='img/sir.jpg') }}" height="300px" class="img-fluid" alt="" style="max-width: 100%; max-height: 100%;">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/v-c-bharathi-30a579b8/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info" style="text-align: center;">
+                <h4>Dr V.C. Bharathi</h4>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Created By</h2>
+          <p>V FOR VISION is project of dedication, innovation, and a passion for providing exceptional healthcare. Our team is proud to have designed and developed this platform with a mission to enhance the way healthcare is delivered. Our team's diverse expertise allows us to build this product with cutting-edge technology, resulting in the unique services offered on this platform.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/Sravan.jpg') }}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/chintam-sravan-kumar-ab81a021b/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Chintam Sravan Kumar</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/Ganesh.jpg') }}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/chintha-sai-ganesh-0754a122a/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Chintha Sai Ganesh</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/anusha.jpg') }}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/mayaluri-anusha-a39660234/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mayaluri Anusha</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="{{ url_for('static', filename='img/Yuvaraj.jpg') }}" height="5000px" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/yuvaraj-morla-14my/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Morla Yuvaraj</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+    </div>
+
+    <div>
+      <iframe style="border:0; width: 100%; height: 350px;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.590052556934!2d80.4980926749023!3d16.49628282786437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f39dae7b3fb5%3A0xe467b276c7048974!2sVIT-AP%20Central%20Block!5e0!3m2!1sen!2sin!4v1698485659641!5m2!1sen!2sin"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>VIT-AP, Amravati, AndhraPradesh, INDIA.</p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>
+                  sravan.21bce7822@vitapstudent.ac.in<br>
+                  saiganesh.21bce9476@vitapstudent.ac.in<br>
+                  anusha.21bce9143@vitapstudent.ac.in<br>
+                  yuvaraj.21bce9408@vitapstudent.ac.in<br>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+91 70665 40121</p>
+                <p>+91 99667 64430</p>
+                <p>+91 78931 02861</p>
+                <p>+91 70326 25826</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form action="https://formsubmit.co/chintamsravankumar@gmail.com" method="POST" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input name="contactName" type="text" id="Name" value="" minlength="2" class="form-control"
+                  placeholder="Your Name" required="">
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input name="contactEmail" type="email" id="Email" value="" class="form-control"
+                  placeholder="Your Email" required="">
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input name="contactSubject" type="text" id="Subject" placeholder="Subject" class="form-control" value=""
+                placeholder="Subject" required="">
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="contactMessage" id="Message" rows="7" placeholder="Message"
+                required=""></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://chintam-sravan.github.io/EYE-DISEASE-PREDICTION/main.html">
+            <div class="form-field">
+              <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  
+
+
+  <!-- Template Main JS File -->
+  <script>
+    $(document).ready(function () {
+    // Init
+    $('.image-section').hide();
+    $('.loader').hide();
+    $('#result').hide();
+
+    // Upload Preview
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                $('#imagePreview').hide();
+                $('#imagePreview').fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imageUpload").change(function () {
+        $('.image-section').show();
+        $('#btn-predict').show();
+        $('#result').text('');
+        $('#result').hide();
+        readURL(this);
+    });
+
+    // Predict
+    $('#btn-predict').click(function () {
+        var form_data = new FormData($('#upload-file')[0]);
+
+        // Show loading animation
+        $(this).hide();
+        $('.loader').show();
+
+        // Make prediction by calling api /predict
+        $.ajax({
+            type: 'POST',
+            url: '/predict',
+            data: form_data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            async: true,
+            success: function (data) {
+                // Get and display the result
+                $('.loader').hide();
+                $('#result').fadeIn(600);
+                $('#result').text(' Result:  ' + data);
+                console.log('Success!');
+            },
+        });
+    });
+
+});
+
+  
+  </script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
